@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import React from 'react'
 
-import ThemeProvider from '@/app/providers/theme-provider'
+import Providers from '@/app/providers'
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -34,7 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AntdRegistry>
-          <ThemeProvider>{children}</ThemeProvider>
+          <Providers>{children}</Providers>
         </AntdRegistry>
       </body>
     </html>

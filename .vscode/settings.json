@@ -1,21 +1,22 @@
 {
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "always",
-        "source.addMissingImports": "explicit",
-        "source.organizeImports": "explicit"
-    },
-    "eslint.enable": true,
-    "typescript.suggest.autoImports": true,
-    "javascript.suggest.autoImports": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "eslint.validate": [
         "javascript",
-        "typescript",
         "javascriptreact",
+        "typescript",
         "typescriptreact"
     ],
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "typescript.preferences.importModuleSpecifier": "non-relative",
-    "javascript.preferences.importModuleSpecifier": "non-relative",
-    "postman.settings.dotenv-detection-notification-visibility": false,
+    "editor.codeActionsOnSave": [
+        "source.addMissingImports",
+        "source.fixAll.eslint",
+        "source.fixAll.stylelint",
+        "source.fixAll.markdownlint"
+    ],
+    "files.insertFinalNewline": true,
+    "i18n-ally.localesPaths": [
+        "src/i18n",
+        "messages"
+    ],
+    "i18n-ally.keystyle": "nested"
 }

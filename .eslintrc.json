@@ -55,7 +55,21 @@
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "no-restricted-imports": [
-      "error"
+      "error",
+      {
+        "name": "next/link",
+        "message": "Please import from `@/i18n/routing` instead."
+      },
+      {
+        "name": "next/navigation",
+        "importNames": [
+          "redirect",
+          "permanentRedirect",
+          "useRouter",
+          "usePathname"
+        ],
+        "message": "Please import from `@/i18n/routing` instead."
+      }
     ]
   }
 }
