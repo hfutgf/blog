@@ -57,18 +57,30 @@
     "no-restricted-imports": [
       "error",
       {
-        "name": "next/link",
-        "message": "Please import from `@/i18n/routing` instead."
-      },
-      {
-        "name": "next/navigation",
-        "importNames": [
-          "redirect",
-          "permanentRedirect",
-          "useRouter",
-          "usePathname"
+        "paths": [
+          {
+            "name": "next/link",
+            "message": "Please import from `@/i18n/routing` instead."
+          },
+          {
+            "name": "next/navigation",
+            "importNames": [
+              "redirect",
+              "permanentRedirect",
+              "useRouter",
+              "usePathname"
+            ],
+            "message": "Please import from `@/i18n/routing` instead."
+          },
+          {
+            "name": "antd",
+            "message": "Please import from `@/components/ui/*` instead."
+          }
         ],
-        "message": "Please import from `@/i18n/routing` instead."
+        "patterns": [
+          "antd/*",
+          "!@/components/ui/*"
+        ]
       }
     ]
   }

@@ -1,10 +1,11 @@
 'use client'
 
 import { MoonOutlined, SunOutlined } from '@ant-design/icons'
-import { Select, Switch } from 'antd'
 import { useLocale } from 'next-intl'
 
 import { useThemeMode } from '@/app/providers/theme-provider'
+import Select from '@/components/ui/select'
+import Switch from '@/components/ui/switch'
 import { locales } from '@/constants/locales'
 import { Link, usePathname, useRouter } from '@/i18n/navigation'
 
