@@ -1,0 +1,21 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always",
+        "source.addMissingImports": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "eslint.enable": true,
+    "typescript.suggest.autoImports": true,
+    "javascript.suggest.autoImports": true,
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact"
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "postman.settings.dotenv-detection-notification-visibility": false,
+}
